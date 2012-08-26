@@ -13,7 +13,9 @@ object General {
   )
 
   val proguardSettings = Seq (
-    useProguard in Android := true
+    useProguard in Android := true,
+    proguardOption in Android := """-dontnote **
+                                   |-keep class twitter4j.** {*;}""".stripMargin
   )
 
   lazy val fullAndroidSettings =
@@ -24,7 +26,13 @@ object General {
     AndroidManifestGenerator.settings ++
     AndroidMarketPublish.settings ++ Seq (
       keyalias in Android := "change-me",
-      libraryDependencies += "org.scalatest" %% "scalatest" % "1.8.RC1" % "test"
+      resolvers ++= Seq (
+        "twitter4j.org Repository" at "http://twitter4j.org/maven2"
+      ),
+      libraryDependencies ++= Seq (
+        "org.scalatest" %% "scalatest" % "1.8.RC1" % "test",
+        "org.twitter4j" % "twitter4j-core" % "3.0.0-SNAPSHOT"
+      )
     )
 }
 
