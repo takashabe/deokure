@@ -15,6 +15,7 @@ object General {
   val proguardSettings = Seq (
     useProguard in Android := true,
     proguardOption in Android := """-dontnote **
+                                   |-keep class akka.** {*;}
                                    |-keep class twitter4j.** {*;}""".stripMargin
   )
 
@@ -27,11 +28,13 @@ object General {
     AndroidMarketPublish.settings ++ Seq (
       keyalias in Android := "change-me",
       resolvers ++= Seq (
-        "twitter4j.org Repository" at "http://twitter4j.org/maven2"
+        "twitter4j.org Repository" at "http://twitter4j.org/maven2",
+        "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
       ),
       libraryDependencies ++= Seq (
         "org.scalatest" %% "scalatest" % "1.8.RC1" % "test",
-        "org.twitter4j" % "twitter4j-core" % "3.0.0-SNAPSHOT"
+        "org.twitter4j" % "twitter4j-core" % "3.0.0-SNAPSHOT",
+        "com.typesafe.akka" % "akka-actor" % "2.0.3"
       )
     )
 }
