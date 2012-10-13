@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="android.jar">
+    <CLASSES>
+      <root url="jar://$android_home$/platforms/android-14/android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$android_home$/sources/android-16" />
+    </SOURCES>
+  </library>
+</component>

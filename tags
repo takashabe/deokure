@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BuildConfig	.idea_modules/gen/com/takashabe/deokure/BuildConfig.java	/^public final class BuildConfig {$/;"	c
+BuildConfig	gen/com/takashabe/deokure/BuildConfig.java	/^public final class BuildConfig {$/;"	c
+DEBUG	.idea_modules/gen/com/takashabe/deokure/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
+DEBUG	gen/com/takashabe/deokure/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
+JR	.idea_modules/gen/com/takashabe/deokure/R.java	/^        public static final int JR=0x7f030000;$/;"	f	class:R.array
+Manifest	.idea_modules/gen/com/takashabe/deokure/Manifest.java	/^public final class Manifest {$/;"	c
+R	.idea_modules/gen/com/takashabe/deokure/R.java	/^public final class R {$/;"	c
+app_name	.idea_modules/gen/com/takashabe/deokure/R.java	/^        public static final int app_name=0x7f040000;$/;"	f	class:R.string
+array	.idea_modules/gen/com/takashabe/deokure/R.java	/^    public static final class array {$/;"	c	class:R
+attr	.idea_modules/gen/com/takashabe/deokure/R.java	/^    public static final class attr {$/;"	c	class:R
+button	.idea_modules/gen/com/takashabe/deokure/R.java	/^        public static final int button=0x7f040001;$/;"	f	class:R.string
+com.takashabe.deokure	.idea_modules/gen/com/takashabe/deokure/BuildConfig.java	/^package com.takashabe.deokure;$/;"	p
+com.takashabe.deokure	.idea_modules/gen/com/takashabe/deokure/Manifest.java	/^package com.takashabe.deokure;$/;"	p
+com.takashabe.deokure	.idea_modules/gen/com/takashabe/deokure/R.java	/^package com.takashabe.deokure;$/;"	p
+com.takashabe.deokure	gen/com/takashabe/deokure/BuildConfig.java	/^package com.takashabe.deokure;$/;"	p
+id	.idea_modules/gen/com/takashabe/deokure/R.java	/^    public static final class id {$/;"	c	class:R
+layout	.idea_modules/gen/com/takashabe/deokure/R.java	/^    public static final class layout {$/;"	c	class:R
+main	.idea_modules/gen/com/takashabe/deokure/R.java	/^        public static final int main=0x7f020000;$/;"	f	class:R.layout
+stop_button	.idea_modules/gen/com/takashabe/deokure/R.java	/^        public static final int stop_button=0x7f050001;$/;"	f	class:R.id
+string	.idea_modules/gen/com/takashabe/deokure/R.java	/^    public static final class string {$/;"	c	class:R
+textview	.idea_modules/gen/com/takashabe/deokure/R.java	/^        public static final int textview=0x7f050000;$/;"	f	class:R.id

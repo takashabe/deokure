@@ -4,17 +4,20 @@
     <application
         android:icon="@drawable/android:star_big_on"
         android:label="@string/app_name"
-        android:debuggable="true">
+        android:debuggable="true"
+        android:theme="@style/my_theme"
+        android:uiOptions="splitActionBarWhenNarrow">
 
-        <activity android:label="@string/app_name" android:name=".MainActivity">
+
+    <activity android:label="@string/app_name"
+              android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <service android:name=".Back" />
-
+        <service android:name=".RouteGuideService" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

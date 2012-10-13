@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/favorite"
+          android:icon="@drawable/rating_important"
+          android:showAsAction="ifRoom|withText"
+          android:title="Favorite"/>
+
+    <item android:id="@+id/refresh"
+          android:icon="@drawable/navigation_refresh"
+          android:showAsAction="ifRoom|withText"
+          android:title="Refresh"/>
+
+    <item android:id="@+id/delay"
+          android:icon="@drawable/av_pause"
+          android:showAsAction="ifRoom|withText"
+          android:title="Delay"/>
+
+    <item android:id="@+id/all"
+          android:icon="@drawable/collections_view_as_list"
+          android:showAsAction="ifRoom|withText"
+          android:title="All"/>
+</menu>

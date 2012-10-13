@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">deokure</string>
+    <string name="button">STOP !!!</string>
+    <string-array name="query">
+        <item>遅れ</item>
+        <item>運転見合わせ</item>
+        <item>止まっている</item>
+    </string-array>
 </resources>
