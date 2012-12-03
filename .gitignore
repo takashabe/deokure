@@ -1,4 +1,4 @@
 \.DS_Store
 project/target
 target
-\.idea.*
+gen

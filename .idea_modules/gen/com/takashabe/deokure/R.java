@@ -124,60 +124,63 @@ public final class R {
         public static final int hardware_keyboard=0x7f020069;
         public static final int hardware_mouse=0x7f02006a;
         public static final int hardware_phone=0x7f02006b;
-        public static final int images_crop=0x7f02006c;
-        public static final int images_rotate_left=0x7f02006d;
-        public static final int images_rotate_right=0x7f02006e;
-        public static final int images_slideshow=0x7f02006f;
-        public static final int location_directions=0x7f020070;
-        public static final int location_map=0x7f020071;
-        public static final int location_place=0x7f020072;
-        public static final int location_web_site=0x7f020073;
-        public static final int navigation_accept=0x7f020074;
-        public static final int navigation_back=0x7f020075;
-        public static final int navigation_cancel=0x7f020076;
-        public static final int navigation_collapse=0x7f020077;
-        public static final int navigation_expand=0x7f020078;
-        public static final int navigation_forward=0x7f020079;
-        public static final int navigation_next_item=0x7f02007a;
-        public static final int navigation_previous_item=0x7f02007b;
-        public static final int navigation_refresh=0x7f02007c;
-        public static final int rating_bad=0x7f02007d;
-        public static final int rating_favorite=0x7f02007e;
-        public static final int rating_good=0x7f02007f;
-        public static final int rating_half_important=0x7f020080;
-        public static final int rating_important=0x7f020081;
-        public static final int rating_not_important=0x7f020082;
-        public static final int social_add_group=0x7f020083;
-        public static final int social_add_person=0x7f020084;
-        public static final int social_cc_bcc=0x7f020085;
-        public static final int social_chat=0x7f020086;
-        public static final int social_forward=0x7f020087;
-        public static final int social_group=0x7f020088;
-        public static final int social_person=0x7f020089;
-        public static final int social_reply=0x7f02008a;
-        public static final int social_reply_all=0x7f02008b;
-        public static final int social_send_now=0x7f02008c;
-        public static final int social_share=0x7f02008d;
+        public static final int ic_launcher=0x7f02006c;
+        public static final int images_crop=0x7f02006d;
+        public static final int images_rotate_left=0x7f02006e;
+        public static final int images_rotate_right=0x7f02006f;
+        public static final int images_slideshow=0x7f020070;
+        public static final int location_directions=0x7f020071;
+        public static final int location_map=0x7f020072;
+        public static final int location_place=0x7f020073;
+        public static final int location_web_site=0x7f020074;
+        public static final int navigation_accept=0x7f020075;
+        public static final int navigation_back=0x7f020076;
+        public static final int navigation_cancel=0x7f020077;
+        public static final int navigation_collapse=0x7f020078;
+        public static final int navigation_expand=0x7f020079;
+        public static final int navigation_forward=0x7f02007a;
+        public static final int navigation_next_item=0x7f02007b;
+        public static final int navigation_previous_item=0x7f02007c;
+        public static final int navigation_refresh=0x7f02007d;
+        public static final int rating_bad=0x7f02007e;
+        public static final int rating_favorite=0x7f02007f;
+        public static final int rating_good=0x7f020080;
+        public static final int rating_half_important=0x7f020081;
+        public static final int rating_important=0x7f020082;
+        public static final int rating_not_important=0x7f020083;
+        public static final int social_add_group=0x7f020084;
+        public static final int social_add_person=0x7f020085;
+        public static final int social_cc_bcc=0x7f020086;
+        public static final int social_chat=0x7f020087;
+        public static final int social_forward=0x7f020088;
+        public static final int social_group=0x7f020089;
+        public static final int social_person=0x7f02008a;
+        public static final int social_reply=0x7f02008b;
+        public static final int social_reply_all=0x7f02008c;
+        public static final int social_send_now=0x7f02008d;
+        public static final int social_share=0x7f02008e;
     }
     public static final class id {
-        public static final int all=0x7f080005;
-        public static final int delay=0x7f080002;
-        public static final int favorite=0x7f080003;
-        public static final int icon=0x7f080000;
-        public static final int refresh=0x7f080004;
-        public static final int text=0x7f080001;
+        public static final int all=0x7f090005;
+        public static final int delay=0x7f090002;
+        public static final int favorite=0x7f090004;
+        public static final int icon=0x7f090000;
+        public static final int refresh=0x7f090003;
+        public static final int text=0x7f090001;
+    }
+    public static final class integer {
+        public static final int interval=0x7f060000;
     }
     public static final class layout {
         public static final int main=0x7f030000;
     }
     public static final class menu {
-        public static final int menu=0x7f070000;
+        public static final int menu=0x7f080000;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
-        public static final int button=0x7f050001;
     }
     public static final class style {
-        public static final int my_theme=0x7f060000;
+        public static final int my_theme=0x7f070000;
     }
 }

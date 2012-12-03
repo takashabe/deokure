@@ -8,6 +8,7 @@ import android.app.LoaderManager.LoaderCallbacks
 import android.app.{ListFragment, FragmentTransaction}
 import android.widget.{ListView, ImageView, TextView}
 import android.graphics.drawable.Drawable
+import android.net.Uri
 
 class MainActivity extends TypedActivity {
 
@@ -42,6 +43,8 @@ class MainActivity extends TypedActivity {
 
   def onClick(v: View) {
     Log.d("deokure => ", "deokure#onClick is down.")
+    Log.d("deokure.log => ", v.getId.toString)
+    val rf = fragment.asInstanceOf[RouteListView]
   }
 
   def onClickFavorite(v: View) {
@@ -88,7 +91,6 @@ class MainActivity extends TypedActivity {
       }
 
       mData = data.map(x => RouteAdapterEntry(x._1, isFav(x._2), isDelay(x._2)))
-      Log.d("deokure.log => ", "setRouteView")
       mAdapter.setData(mData)
     }
 
@@ -135,9 +137,7 @@ class MainActivity extends TypedActivity {
     override def onListItemClick(l: ListView, v: View, position: Int, id: Long) {
       Option(mData) match {
         case None =>
-        case Some(x) => {
-          TwitterAnalyzer(getApplicationContext).toggleFav(x(position).text)
-        }
+        case Some(x) => TwitterAnalyzer(getApplicationContext).toggleFav(x(position).text)
       }
 
       reloadRoutes()
@@ -195,7 +195,7 @@ class LoadTweetTask(context: Context) extends AsyncTaskLoader[List[(String, Stri
     val thread = TwitterAnalyzer(context)
     val tweet = thread.collectTweet
     thread.updateDelayStatus(tweet.unzip._1)
-    thread.delayNotification(thread.readOnlyFavRoute, thread.readOnlyFavRoute)
+    thread.delayNotification(thread.readOnlyDelayStatus, thread.readOnlyFavRoute)
     thread.readRouteList
   }
 

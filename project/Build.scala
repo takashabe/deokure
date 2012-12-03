@@ -6,8 +6,8 @@ import AndroidKeys._
 object General {
   val settings = Defaults.defaultSettings ++ Seq (
     name := "deokure",
-    version := "0.1",
-    versionCode := 0,
+    version := "1.0",
+    versionCode := 1,
     scalaVersion := "2.9.2",
     platformName in Android := "android-14"
   )
@@ -25,7 +25,7 @@ object General {
     proguardSettings ++
     AndroidManifestGenerator.settings ++
     AndroidMarketPublish.settings ++ Seq (
-      keyalias in Android := "change-me",
+      keyalias in Android := "alias_name",
       resolvers ++= Seq (
         "twitter4j.org Repository" at "http://twitter4j.org/maven2",
         "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",

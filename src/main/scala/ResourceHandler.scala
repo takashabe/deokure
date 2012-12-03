@@ -14,4 +14,6 @@ object ResourceHandler {
     val routes = Nil
     JR ::: routes
   }
+
+  def getPullTwitterInterval(res: Resources): Long = res.getInteger(R.integer.interval)
 }
